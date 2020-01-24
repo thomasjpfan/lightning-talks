@@ -1,4 +1,4 @@
-# Lightning Talks Repos
+# Lightning Talks
 
 Collection of lightning talks
 
