@@ -16,7 +16,6 @@ body {
 .remark-slide-content {
     font-size: 1.4em;
     border-top: solid 5px #520b92;
-    vertical-align: middle;
 }
 
 .remark-slide-content h1 {
@@ -350,7 +349,7 @@ ul > li > ul > li {
     text-align: center;
 }
 
-.end-slide {
+.chapter-slide {
     background-color: #520b92;
     color: white;
     vertical-align: middle;
@@ -358,7 +357,7 @@ ul > li > ul > li {
     text-align: center;
 }
 
-.end-slide h1 {
+.chapter-slide h1 {
     color: white;
 }
 

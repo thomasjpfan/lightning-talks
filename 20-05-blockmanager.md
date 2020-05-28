@@ -8,12 +8,16 @@ class: title-slide
 
 ---
 
+class: middle
+
 # Before we start :)
 
 1. If you are from NYC, **Push 1**.
 2. Otherwise, **Push 2**.
 
 ---
+
+class: middle
 
 # Pandas users?
 
@@ -52,9 +56,7 @@ df.head(2)
 |  0 |       0 |         0 |      10 | True     |      20 |        10 |
 |  1 |       1 |         1 |      11 | True     |      21 |        11 |
 
----
-
-# How is this stored?
+--
 
 ![](figures/20-05-blockmanager/blockmanager-1.png)
 
@@ -190,9 +192,7 @@ for i in range(94):
 # 100
 ```
 
----
-
-# What does this look like?
+--
 
 ![](figures/20-05-blockmanager/blockmanager-scatter.png)
 
@@ -297,6 +297,8 @@ Wall time: 1.3 s
 
 ---
 
+class: middle
+
 # Conclusion
 
 - DataFrame operations depends on context
@@ -307,7 +309,7 @@ Wall time: 1.3 s
 
 ---
 
-class: end-slide
+class: chapter-slide
 
 # fin.
 
