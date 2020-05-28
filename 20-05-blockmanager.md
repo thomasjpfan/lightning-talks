@@ -128,7 +128,7 @@ How many blocks now?
 
 ---
 
-# What happend?
+# What happened?
 
 ![](figures/20-05-blockmanager/blockmanager-2.png)
 
