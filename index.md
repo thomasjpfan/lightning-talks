@@ -1,6 +1,6 @@
 # Lightning Talks by @thomasjpfan
 
-[Link to github](https://github.com/thomasjpfan/lightning-talks)
+[thomasjpfan/lightning-talks](https://github.com/thomasjpfan/lightning-talks)
 
 ## 2020
 
