@@ -1,5 +1,7 @@
 # Lightning Talks by @thomasjpfan
 
+[Link to github](https://github.com/thomasjpfan/lightning-talks)
+
 ## 2020
 
 - [Small Dive into Pandas' BlockManager](?p=20-05-blockmanager.md) - (2020-01-23)
