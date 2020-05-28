@@ -141,11 +141,11 @@ How many blocks now?
 
 BlockManager
 Items: Index(['int_1', 'float_1', 'int_2', 'bool_1', 'int_3', 'float_2', 'int_4'], dtype='object')
-Axis 1: RangeIndex(start=0, stop=10, step=1)
-FloatBlock: slice(1, 9, 4), 2 x 10, dtype: float64
-IntBlock: slice(0, 6, 2), 3 x 10, dtype: int64
-BoolBlock: slice(3, 4, 1), 1 x 10, dtype: bool
-IntBlock: slice(6, 7, 1), 1 x 10, dtype: int64
+Axis 1: RangeIndex(start=0, stop=1000000, step=1)
+FloatBlock: slice(1, 9, 4), 2 x 1000000, dtype: float64
+IntBlock: slice(0, 6, 2), 3 x 1000000, dtype: int64
+BoolBlock: slice(3, 4, 1), 1 x 1000000, dtype: bool
+IntBlock: slice(6, 7, 1), 1 x 1000000, dtype: int64
 ```
 
 ---
