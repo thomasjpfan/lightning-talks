@@ -158,7 +158,7 @@ IntBlock: slice(6, 7, 1), 1 x 10, dtype: int64
 
 How long does it take?
 
-1. ~ 1.3 milliseconds
+1. ~ 1.3 seconds
 2. ~ 6.1 milliseconds
 
 --
