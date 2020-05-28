@@ -302,7 +302,7 @@ Wall time: 1.3 s
 - DataFrame operations depends on context
 - [Block Manager Rewrite](https://pandas.pydata.org/docs/development/roadmap.html#block-manager-rewrite)
 - Implications for scikit-learn - [pandas in pandas out prototype](https://github.com/scikit-learn/scikit-learn/pull/16772)
-- [https://github.com/thomasjpfan/lightning-talks](https://github.com/thomasjpfan/lightning-talks)
+- [https://thomasjpfan.github.io/lightning-talks](https://thomasjpfan.github.io/lightning-talks)
 
 
 ---
