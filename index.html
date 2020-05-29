@@ -39,17 +39,18 @@
       highlightStyle: "github",
       highlightLines: true,
     };
-    var renderMath = function () {
-      renderMathInElement(document.body, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false },
-          { left: "\\[", right: "\\]", display: true },
-          { left: "\\(", right: "\\)", display: false },
-        ]
-      });
-    }
-    var slideshow = remark.create(options, renderMath);
+    // var renderMath = function () {
+    //   renderMathInElement(document.body, {
+    //     delimiters: [
+    //       { left: "$$", right: "$$", display: true },
+    //       { left: "$", right: "$", display: false },
+    //       { left: "\\[", right: "\\]", display: true },
+    //       { left: "\\(", right: "\\)", display: false },
+    //     ]
+    //   });
+    // }
+    // var slideshow = remark.create(options, renderMath);
+    var slideshow = remark.create(options);
   </script>
 </body>
 
