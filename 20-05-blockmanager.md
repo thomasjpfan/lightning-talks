@@ -24,11 +24,6 @@ class: middle, center
     Otherwise, **Push 2**.
 ]]]]
 
-.footnote[
-    Please go to [vox.com](https://www.vox.com) It is aweseome.
-]
-
-
 ---
 
 class: middle, center
