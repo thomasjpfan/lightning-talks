@@ -76,7 +76,7 @@ df.head(2)
 |  1 |       1 |         1 |      11 | True     |      21 |        11 |
 ]
 .grid-6[
-    ![](figures/20-05-blockmanager/blockmanager-1.png)
+    ![](figures/2020-05-blockmanager/blockmanager-1.png)
 ]
 ]
 
@@ -148,7 +148,7 @@ How many blocks now?
 
 ]
 .grid-6[
-![](figures/20-05-blockmanager/blockmanager-2.png)
+![](figures/2020-05-blockmanager/blockmanager-2.png)
 ]
 ]
 
@@ -214,7 +214,7 @@ for i in range(94):
 --
 
 .width-70[
-![](figures/20-05-blockmanager/blockmanager-scatter.png)
+![](figures/2020-05-blockmanager/blockmanager-scatter.png)
 ]
 
 ---
@@ -241,7 +241,7 @@ Wall time: 1.3 s
 
 # What happened? (Consolidation!)
 
-![](figures/20-05-blockmanager/blockmanager-3.png)
+![](figures/2020-05-blockmanager/blockmanager-3.png)
 
 ---
 

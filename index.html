@@ -24,6 +24,7 @@
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
+    console.log(window.location.href)
 
     var sourceUrl = getParameterByName("p");
     if (sourceUrl === null) {
