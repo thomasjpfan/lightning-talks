@@ -3,8 +3,9 @@ class: title-slide
 # Small Dive into Pandas' BlockManager
 
 .larger[Thomas J. Fan]<br>
-<span class="icon-social"></span>
-@thomasjpfan
+@thomasjpfan<br>
+<a href="https://www.github.com/thomasjpfan" target="_blank"><span class="icon-github"></span></a>
+<a href="https://www.twitter.com/thomasjpfan" target="_blank"><span class="icon-twitter"></span></a>
 
 ---
 
@@ -326,5 +327,6 @@ class: chapter-slide
 
 .larger[Thomas J. Fan]<br>
 <span class="icon-social-white"></span>
-@thomasjpfan
-
+@thomasjpfan<br>
+<a href="https://www.github.com/thomasjpfan" target="_blank"><span class="icon-github-white"></span></a>
+<a href="https://www.twitter.com/thomasjpfan" target="_blank"><span class="icon-twitter-white"></span></a>

@@ -352,7 +352,8 @@ ul > li > ul > li {
     text-align: center;
 }
 
-.chapter-slide h1 {
+.chapter-slide h1,
+.chapter-slide a {
     color: white;
 }
 
@@ -368,20 +369,47 @@ ul > li > ul > li {
     border-top: solid 0px;
 }
 
-.icon-social {
-    display: inline-block;
-    height: 24px;
-    width: 60px;
-    background-image: url(social.svg);
+
+.icon-twitter,
+.icon-twitter-white {
+    background-image: url(twitter.svg);
 }
 
-.icon-social-white {
+.icon-github,
+.icon-github-white {
+    background-image: url(github.svg);
+    margin-right: 10px;
+}
+
+.icon-twitter,
+.icon-github {
     display: inline-block;
     height: 24px;
-    width: 60px;
-    background-image: url(social.svg);
-    filter: invert(100%) sepia(57%) saturate(0%) hue-rotate(253deg) brightness(106%) contrast(106%);
+    width: 24px;
+    transform: scale(1.3);
+    margin-top: 10px;
 }
+
+.icon-twitter:hover,
+.icon-github:hover {
+    filter: invert(12%) sepia(54%) saturate(6015%) hue-rotate(269deg) brightness(87%) contrast(109%);
+}
+
+.icon-twitter-white,
+.icon-github-white {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    transform: scale(1.3);
+    filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(185deg) brightness(106%) contrast(106%);
+    margin-top: 10px;
+}
+
+.icon-twitter-white:hover,
+.icon-github-white:hover {
+    filter: invert(21%) sepia(69%) saturate(5510%) hue-rotate(111deg) brightness(95%) contrast(103%);
+}
+
 
 .remark-slide table {
     border: none;
