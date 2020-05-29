@@ -1,4 +1,3 @@
-title: Small Dive into Pandas' BlockManager
 class: title-slide
 
 # Small Dive into Pandas' BlockManager
@@ -13,17 +12,15 @@ class: middle, center
 
 # Before we start :)
 
-.grid-row[
-.grid-6[
-.success[
-.bold.center[
+.grid[
+.grid-6[.success.bold.center[
     If you are from NYC, **Push 1**.
-]]]
+]]
 
-.grid-6[
-.alert[.bold.center[
+.grid-6[.alert.bold.center[
     Otherwise, **Push 2**.
-]]]]
+]]
+]
 
 ---
 
@@ -31,17 +28,14 @@ class: middle, center
 
 # Pandas users?
 
-.grid-row[
-.grid-6[
-.success[
-.bold.center[
+.grid[
+.grid-6[.success.bold.center[
     Press 1 for Yes
-]]]
-
-.grid-6[
-.alert[.bold.center[
+]]
+.grid-6[.alert.bold.center[
     Press 0 for No
-]]]]
+]]
+]
 
 ---
 
