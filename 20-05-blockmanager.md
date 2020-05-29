@@ -50,15 +50,17 @@ df.head(2)
 
 # How is this stored?
 
-
+.grid-row[
+.grid-6[
 |    |   int_1 |   float_1 |   int_2 | bool_1   |   int_3 |   float_2 |
 |---:|--------:|----------:|--------:|:---------|--------:|----------:|
 |  0 |       0 |         0 |      10 | True     |      20 |        10 |
 |  1 |       1 |         1 |      11 | True     |      21 |        11 |
-
---
-
-![](figures/20-05-blockmanager/blockmanager-1.png)
+]
+.grid-6[
+    ![](figures/20-05-blockmanager/blockmanager-1.png)
+]
+]
 
 ---
 
@@ -105,9 +107,12 @@ array([[      0,       1,       2, ...,  999997,  999998,  999999],
 
 Recall
 
+
+.grid-row[
+.grid-6[
 ```py
 >>> df._data.nblocks
-# 3
+3
 ```
 
 Add new column
@@ -120,19 +125,14 @@ How many blocks now?
 
 ```py
 >>> df._data.nblocks
-```
-
---
-
-```
 4
 ```
 
----
-
-# What happened?
-
+]
+.grid-6[
 ![](figures/20-05-blockmanager/blockmanager-2.png)
+]
+]
 
 ---
 
@@ -155,7 +155,7 @@ IntBlock: slice(6, 7, 1), 1 x 1000000, dtype: int64
 # Add another column for fun
 
 ```py
-%time df['int_5'] = df['int_1'].values
+>>> %time df['int_5'] = df['int_1'].values
 ```
 
 How long does it take?
@@ -173,7 +173,7 @@ Wall time: 6.18 ms
 
 ```py
 >>> df._data.nblocks
-# 5
+5
 ```
 
 ---
@@ -184,17 +184,20 @@ Wall time: 6.18 ms
 %%time
 for i in range(94):
     df[f'int_{i + 6}'] = df['int_1'].values
+
 # Wall time: 560 ms
 ```
 
 ```py
 >>> df._data.nblocks
-# 100
+100
 ```
 
 --
 
+.width-70[
 ![](figures/20-05-blockmanager/blockmanager-scatter.png)
+]
 
 ---
 
@@ -228,7 +231,7 @@ Wall time: 1.3 s
 
 ```py
 >>> df._data.nblocks
-# 3
+3
 
 >>> df._data
 
@@ -246,23 +249,18 @@ IntBlock: [0, 2, ...], 101 x 1000000, dtype: int64
 
 ```py
 >>> df._data.nblocks
-# 3
+3
 ```
 
 ```py
-%time df.loc[:, "int_102"] = 1
-# Wall time: 2.03 ms
+>>> %time df.loc[:, "int_102"] = 1
+Wall time: 2.03 ms
 ```
 
 How many blocks now?
 
 ```py
 >>> df._data.nblocks
-```
-
---
-
-```
 4
 ```
 
