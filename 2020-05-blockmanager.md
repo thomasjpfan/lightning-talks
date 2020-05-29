@@ -1,3 +1,4 @@
+title: Small Dive into Pandas' BlockManager
 class: title-slide
 
 # Small Dive into Pandas' BlockManager
