@@ -8,21 +8,44 @@ class: title-slide
 
 ---
 
-class: middle
+class: middle, center
 
 # Before we start :)
 
-1. If you are from NYC, **Push 1**.
-2. Otherwise, **Push 2**.
+.grid-row[
+.grid-6[
+.success[
+.bold.center[
+    If you are from NYC, **Push 1**.
+]]]
+
+.grid-6[
+.alert[.bold.center[
+    Otherwise, **Push 2**.
+]]]]
+
+.footnote[
+    Please go to [vox.com](https://www.vox.com) It is aweseome.
+]
+
 
 ---
 
-class: middle
+class: middle, center
 
 # Pandas users?
 
-1. Yes
-2. No
+.grid-row[
+.grid-6[
+.success[
+.bold.center[
+    Press 1 for Yes
+]]]
+
+.grid-6[
+.alert[.bold.center[
+    Press 0 for No
+]]]]
 
 ---
 
