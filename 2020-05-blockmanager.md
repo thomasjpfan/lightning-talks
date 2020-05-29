@@ -121,7 +121,7 @@ array([[      0,       1,       2, ...,  999997,  999998,  999999],
 Recall
 
 
-.grid-row[
+.grid[
 .grid-6[
 ```py
 >>> df._data.nblocks
