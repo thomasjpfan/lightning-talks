@@ -1,27 +1,11 @@
 class: title-slide
 
-# Small Dive into Pandas' BlockManager
+# A Shallow Dive into Pandas' BlockManager
 
 .larger[Thomas J. Fan]<br>
 @thomasjpfan<br>
 <a href="https://www.github.com/thomasjpfan" target="_blank"><span class="icon-github"></span></a>
 <a href="https://www.twitter.com/thomasjpfan" target="_blank"><span class="icon-twitter"></span></a>
-
----
-
-class: middle, center
-
-# Before we start :)
-
-.grid[
-.grid-6[.success.bold.center[
-    If you are from NYC, **Push 1**.
-]]
-
-.grid-6[.alert.bold.center[
-    Otherwise, **Push 2**.
-]]
-]
 
 ---
 
@@ -172,18 +156,9 @@ IntBlock: slice(6, 7, 1), 1 x 1000000, dtype: int64
 >>> %time df['int_5'] = df['int_1'].values
 ```
 
-How long does it take?
-
-1. ~ 1.3 seconds
-2. ~ 6.1 milliseconds
-
---
-
 ```
 Wall time: 6.18 ms
 ```
-
---
 
 ```py
 >>> df._data.nblocks
@@ -207,8 +182,6 @@ for i in range(94):
 100
 ```
 
---
-
 .width-70[
 ![](figures/2020-05-blockmanager/blockmanager-scatter.png)
 ]
@@ -223,10 +196,36 @@ for i in range(94):
 
 How long does it take?
 
-1. ~ 1.3 seconds
-2. ~ 6.1 milliseconds
+A. 1.3 seconds<br>
+B. 6.1 milliseconds
 
---
+.grid[
+.grid-6[.success.bold.center[
+    Press A
+]]
+.grid-6[.alert.bold.center[
+    Press B
+]]
+]
+
+---
+
+# Add one more int column
+
+```py
+%time df['int_100'] = df['int_1'].values
+```
+
+How long does it take?
+
+A. 1.3 seconds<br>
+B. 6.1 milliseconds
+
+.grid[
+.grid-12[.success.bold.center[
+    Press A
+]]
+]
 
 ```
 Wall time: 1.3 s
@@ -237,34 +236,16 @@ Wall time: 1.3 s
 
 # What happened? (Consolidation!)
 
+```py
+>>> df._data.nblocks
+3
+```
+
 ![](figures/2020-05-blockmanager/blockmanager-3.png)
 
 ---
 
-# What happened?
-
-```py
->>> df._data.nblocks
-3
-
->>> df._data
-
-BlockManager
-Items: Index(['int_1', 'float_1', ...], dtype='object', length=104)
-Axis 1: RangeIndex(start=0, stop=1000000, step=1)
-BoolBlock: slice(3, 4, 1), 1 x 1000000, dtype: bool
-FloatBlock: slice(1, 9, 4), 2 x 1000000, dtype: float64
-IntBlock: [0, 2, ...], 101 x 1000000, dtype: int64
-```
-
----
-
 # Add another column
-
-```py
->>> df._data.nblocks
-3
-```
 
 ```py
 >>> %time df.loc[:, "int_102"] = 1
@@ -291,16 +272,42 @@ How about?
 
 How long does it take?
 
-1. ~ 1.3 seconds
-2. ~ 2 milliseconds
+1. 1.3 seconds
+2. 2 milliseconds
 
---
+.grid[
+.grid-6[.success.bold.center[
+    Press 1
+]]
+.grid-6[.alert.bold.center[
+    Press 2
+]]
+]
+
+---
+
+# Using loc?
+
+How about?
+
+```py
+%time df.loc[0:10, "int_102"] = 2
+```
+
+How long does it take?
+
+1. 1.3 seconds
+2. 2 milliseconds
+
+.grid[
+.grid-12[.success.bold.center[
+    Press 1
+]]
+]
 
 ```
 Wall time: 1.3 s
 ```
-
---
 
 ```py
 >>> df._data.nblocks
@@ -316,7 +323,6 @@ class: middle
 - DataFrame operations depends on context
 - [Block Manager Rewrite](https://pandas.pydata.org/docs/development/roadmap.html#block-manager-rewrite)
 - Implications for scikit-learn - [pandas in pandas out prototype](https://github.com/scikit-learn/scikit-learn/pull/16772)
-- [https://thomasjpfan.github.io/lightning-talks](https://thomasjpfan.github.io/lightning-talks)
 
 
 ---
